@@ -1,7 +1,5 @@
 # Automated Wallet Access Script
 
-
-
 This Python script utilizes Selenium and PyAutoGUI to automate the process of accessing a wallet application using seed phrases. It is particularly useful for scenarios where manual interaction is required to input the seed phrase and perform certain actions on the wallet interface.
 
 ## Requirements
