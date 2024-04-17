@@ -9,7 +9,7 @@ import pyautogui
 import time
 
 # Setup Chromedriver
-chromedriver_path = r'C:\Users\austin harold\Desktop\ROBOT\hotwallet\chromedriver.exe'
+chromedriver_path = r'.\chromedriver.exe'
 service = Service(executable_path=chromedriver_path)
 options = Options()
 options.add_argument("--disable-notifications")
