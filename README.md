@@ -1,7 +1,9 @@
 # Automated Wallet Access Script
+![Dashboard Interface](https://github.com/Winnode/Hotwallet-Selenium/blob/main/screenshot.png "Dashboard")
+
 
 This Python script utilizes Selenium and PyAutoGUI to automate the process of accessing a wallet application using seed phrases. It is particularly useful for scenarios where manual interaction is required to input the seed phrase and perform certain actions on the wallet interface.
-![Dashboard Interface](https://github.com/Winnode/Hotwallet-Selenium/blob/main/screenshot.png "Dashboard")
+
 ## Requirements
 
 - Python 3.x
