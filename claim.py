@@ -53,7 +53,7 @@ def automate_wallet(account_phrase):
         
         if click_button_in_iframe(driver, "Claim HOT", skip_if_not_clickable=True):
             log_message("Clicked 'Claim HOT' button successfully.", bcolors.OKGREEN)
-            time.sleep(30)  # Added 30 seconds wait after clicking 'Claim HOT'
+            time.sleep(3) 
         else:
             log_message("'Claim HOT' button was not clickable at this time, skipped.", bcolors.WARNING)
         
