@@ -40,7 +40,7 @@ def automate_wallet(account_phrase):
         proceed_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="root"]/div/div/div/div[3]/button')))
         proceed_button.click()
         
-        time.sleep(25)
+        time.sleep(30)
         driver.execute_script("window.open('https://my.herewallet.app/hot');")
         driver.switch_to.window(driver.window_handles[1])
         time.sleep(10)
@@ -53,6 +53,7 @@ def automate_wallet(account_phrase):
         
         if click_button_in_iframe(driver, "Claim HOT", skip_if_not_clickable=True):
             log_message("Clicked 'Claim HOT' button successfully.", bcolors.OKGREEN)
+            time.sleep(30)  # Added 30 seconds wait after clicking 'Claim HOT'
         else:
             log_message("'Claim HOT' button was not clickable at this time, skipped.", bcolors.WARNING)
         
