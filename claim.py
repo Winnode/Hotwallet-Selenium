@@ -91,7 +91,7 @@ def log_message(message, color=bcolors.OKBLUE):
 
 def main():
     print(bcolors.HEADER + "========================================")
-    print("          Winnode Automation Hot Wallet         ")
+    print("      Winnode Automation Hot Wallet         ")
     print("========================================" + bcolors.ENDC)
     try:
         with open('accounts.txt', 'r') as file:
