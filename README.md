@@ -1,4 +1,4 @@
-# Automated Wallet Access Script
+# **Winnode Hot Wallet Automation**
 ![test Interface](https://github.com/Winnode/Hotwallet-Selenium/blob/8c8a19b13cd9a8e0da5b60d23f4d8bd43410b424/screenshot.png "test")
 
 This Python script utilizes Selenium and PyAutoGUI to automate the process of accessing a wallet application using seed phrases. It is particularly useful for scenarios where manual interaction is required to input the seed phrase and perform certain actions on the wallet interface.
@@ -10,47 +10,74 @@ This Python script utilizes Selenium and PyAutoGUI to automate the process of ac
 - PyAutoGUI
 - Chrome WebDriver
 
-## Installation
+## **Overview**
 
-1. Clone this repository to your local machine:
+This script automates interactions with the Winnode Hot Wallet using Selenium. It handles logging in with account phrases and performs tasks such as checking news and claiming rewards if available.
 
-    ```bash
-    git clone https://github.com/Winnode/Hotwallet-Selenium.git
-    ```
+## **Features**
 
-2. Install the required Python packages:
+- **Automated Login**: Logs into the Winnode Hot Wallet using provided account phrases.
+- **Task Automation**: Automatically checks news and attempts to claim rewards.
+- **Resilience**: Retries operations on failure, ensuring robustness against network issues.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+## **Prerequisites**
 
-3. Download and install the Chrome WebDriver from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in the project directory.
+Ensure the following requirements are met before running the script:
+- Python 3.8+
+- Google Chrome
+- Selenium
+- webdriver-manager
 
-## Usage
+## **Installation Instructions**
 
-1. Ensure that you have a `seed_key.txt` file in the project directory containing the seed phrases, with each seed phrase on a new line.
+### **Windows:**
 
-2. Run the script `claim.py`:
+1. **Install Python**:
+   - Download and install the Chrome WebDriver from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads) and place it in the project directory.
+   - Ensure to check 'Add Python to PATH' during the installation.
 
-    ```bash
-    python claim.py
-    ```
+2. **Install Required Packages**:
+   - Open Command Prompt and run:
+     ```
+     pip install selenium webdriver-manager
+     ```
 
-3. The script will sequentially process each seed phrase from the `seed_key.txt` file, automating the process of entering the seed phrase and performing actions on the wallet interface.
+### **Linux:**
 
-4. After completing all seed phrases, the script will wait for one hour before restarting the process.
+1. **Install Python and pip**:
+   - Run in your terminal:
+     ```
+     sudo apt update
+     sudo apt install python3 python3-pip
+     ```
 
-## Configuration
+2. **Install Required Packages**:
+   - In your terminal, run:
+     ```
+     pip3 install selenium webdriver-manager
+     ```
 
-- The script uses image recognition to identify and click on certain buttons within the wallet interface. Make sure to replace the button images (`1.png`, `2.png`, etc.) in the project directory with appropriate images matching the buttons in your wallet interface.
+3. **Clone the Repository** (Applicable to both Windows and Linux):
+   - Use Git to clone the repository to your local machine:
+     ```
+     git clone https://github.com/Winnode/Hotwallet-Selenium.git
+     cd Hotwallet-Selenium
+     ```
 
-- Adjust the timeouts and delays according to your system's performance and the speed of the wallet interface.
+4. **Prepare the `accounts.txt` File**:
+   - Create a file named `accounts.txt` in the script directory.
+   - Add your account phrases to this file, one per line.
 
-## Disclaimer
+## **Usage**
 
-- Use this script responsibly and at your own risk. Ensure that you have proper authorization to automate interactions with the wallet application.
+Run the script from a command prompt or terminal in the script's directory:
 
-- The script is provided as-is, without any warranties or guarantees. The developers shall not be liable for any damages or losses resulting from the use of this script.
+```bash
+python main.py
+
+Replace python with python3 on Linux if necessary.
+```
+
 
 ## Give
 - [Follow kami di Twitter](https://twitter.com/Winnode)
